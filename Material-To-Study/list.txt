@@ -1,0 +1,7 @@
+
+
+For time compleixty short notes  =>   https://github.com/gibsjose/cpp-cheat-sheet/blob/master/Data%20Structures%20and%20Algorithms.md#12-vector-stdvector      
+
+
+Aur kaafi saare github repo ko mene start lagaya he , ek bangladesh ka banda he master he codeforces pe 
+
