@@ -1,0 +1,31 @@
+// set ith bit 
+
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+void solve(){
+    
+    int n;
+    cin>>n;
+
+    int i;
+    cin>>i;
+ 
+
+
+    int y=1<<i;
+    cout<<(y|n)<<'\n';
+}
+
+int main(){
+
+    ios_base::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+
+    int T;
+    cin>>T;
+    while(T--)
+        solve();
+}
