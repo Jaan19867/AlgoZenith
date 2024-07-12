@@ -5,3 +5,13 @@ For time compleixty short notes  =>   https://github.com/gibsjose/cpp-cheat-shee
 
 Aur kaafi saare github repo ko mene start lagaya he , ek bangladesh ka banda he master he codeforces pe 
 
+
+
+https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html  => Best platform for algorithms 
+
+cses => Standard Problems: 
+a2oj ladder => very important ladder 
+
+
+https://youkn0wwho.academy/topic-list/dfs => This is also great . 
+

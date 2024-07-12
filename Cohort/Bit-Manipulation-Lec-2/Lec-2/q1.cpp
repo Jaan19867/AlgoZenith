@@ -18,8 +18,11 @@ void solve(){
         prefix[i+1]=prefix[i]^arr[i];
     }
 
-    int ans=prefix[r+1]-prefix[l];
+    int ans=prefix[r+1]^prefix[l];
     cout<<ans<<'\n';
+
+
+    
 
     // l se r tak ke element ka xor nikalana he 
 }

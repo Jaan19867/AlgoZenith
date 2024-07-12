@@ -3,6 +3,8 @@
 using namespace std;
 int n;
 
+int dp[1010];
+
 int rec(int level ){
     // ret -> number of way to N if we are at start 
     // level -> stair i am at 
@@ -43,7 +45,8 @@ if(level>n){
 
 void solve(){
 
-
+  memset(dp , -1,sizeof(dp) );
+  rec(1);
 }
 
 
