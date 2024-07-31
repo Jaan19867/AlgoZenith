@@ -7,30 +7,50 @@ void solve(){
     cin>>n>>x;
 
     int arr[n];
+    int sum=0;
 
     for( int i=0;i<n;i++){
         cin>>arr[i];
+        sum+=arr[i];
 
     }
 
-    int largest=0;
-    int sum=0;
-    int ans=0;
+    int prefix[n+1];
+    prefix[0]=0;
+
     for( int i=0;i<n;i++){
-         sum+=arr[i];
+        prefix[i+1]=prefix[i]+arr[i];
+    }
 
-         if(sum%x==0){
-            sum=0;
-            largest=0;
-         }else{
-            largest++;
-            ans=max(ans , largest);
-         }
+    int ans=n;
+
+    for( int i=0;i<=n;i++){
+      if((sum-prefix[i])%x!=0){
+        ans=n-i;
+        break; 
+      }
+    }
+    
+
+    // yehi suffix ke saath bhi karna padega 
+
+    int suffix[n+1];
+       suffix[0]=0;
+    for( int i=n-1;i>=0 ;i--){
+        suffix[n-i]=suffix[n-i-1]+arr[i];
     }
 
 
-    ans=max(ans , largest);
+    for( int i=0;i<=n;i++){
+        if((sum-prefix[i])%x!=0){
+            ans=max(ans,n-i);
+            return ; 
+        }
+    }
+
     cout<<ans<<'\n';
+
+
 }
 
 int main(){

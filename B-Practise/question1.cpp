@@ -3,24 +3,13 @@
 using namespace std;
 
 void solve(){
-
-    int a , b, c;
-
-    cin>>a>>b>>c;
-
-    if(a>=c){
-        cout<<-1<<" "<<b<<'\n';
+    int n ;
+    cin>>n;
+    if(n%4==0){
+        cout<<n/4<<'\n';
     }else{
-
-        if(c/b>=a){
-            cout<<1<<" "<<-1<<'\n';
-        }else{
-            cout<<a<<" "<<b<<'\n';
-        }
+        cout<<(n-2)/4 +1<<'\n';
     }
-
-
-    
 }
 
 int main(){
